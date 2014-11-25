@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="MyApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        a:link {
+            color: yellow;
+        }
+    </style>
+</head>
+    <body>
+        <div style="background-color: blue;">
+            <a href="#/">List genres</a>
+            <a href="#/Add">New genre</a>
+        </div>
+        <br/>
+        <div data-ng-view></div>
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/angular-route.min.js"></script>
+        <script src="app/controllers/ListGenresController.js"></script>
+        <script src="app/controllers/NewGenreController.js"></script>
+        <script src="app/controllers/EditGenreController.js"></script>
+        <script src="app/app.js"></script>
+    </body>
+</html>

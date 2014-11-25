@@ -92,7 +92,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\controllers\EditGenreController.js" />
+    <Content Include="app\controllers\ListGenresController.js" />
+    <Content Include="app\controllers\NewGenreController.js" />
+    <Content Include="app\partials\EditGenre.html" />
+    <Content Include="app\partials\ListGenres.html" />
+    <Content Include="app\partials\NewGenre.html" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
