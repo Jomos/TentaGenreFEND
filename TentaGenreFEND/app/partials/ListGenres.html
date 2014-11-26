@@ -3,7 +3,7 @@
     <tr data-ng-repeat="g in Genres">
         <td data-ng-bind="g.GenreId"></td>
         <td data-ng-bind="g.Name"></td>
-        <td><button data-ng-click="DeleteGenre(g.GenreId)">Delete</button>
+        <td><button data-ng-click="DeleteGenre(g.GenreId)" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Delete</button>
             <button data-ng-click="UpdateGenre(g.GenreId)">Edit</button>
         </td>
     </tr>

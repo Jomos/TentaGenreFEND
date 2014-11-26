@@ -26,7 +26,7 @@ namespace TentaGenreFEND.Controllers
     */
     public class GenresController : ODataController
     {
-        private ChinookEntities db = new ChinookEntities();
+        private ChinookEntities1 db = new ChinookEntities1();
 
         // GET: odata/Genres
         [EnableQuery]
@@ -88,22 +88,7 @@ namespace TentaGenreFEND.Controllers
             }
 
             db.Genres.Add(genre);
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateException)
-            {
-                if (GenreExists(genre.GenreId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            db.SaveChanges();
 
             return Created(genre);
         }
